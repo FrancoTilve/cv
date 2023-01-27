@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#section1 {
+    background: url("https://images.wallpaperscraft.com/image/single/rose_bud_red_122571_1920x1080.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: auto;
+    
+}
+
+#section2 {
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+                                        /*=======NOMBRE=======*/
+.header {
+    font-size: 200%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+ 
+}
+
+                                        /*=======QUIEN ES=======*/
+#who {
+    color: white;
+    padding: 0;
+    width: 100%;
+
+    margin-left: 5%;
+
+
+}
+                                            /*=======INFO=======*/
+#basicinfo {
+    font-size: 187.5%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+                                            /*=======BOTON=======*/
+
+#aboutme {
+    display: inline-block;
+    background-color: #000000;
+    font-size: 370%;
+    border: 2px solid #000000;
+    color: rgb(255, 255, 255); 
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100%;
+    padding: 1%;
+    margin-left: 5% ;
+    opacity: 1;
+
+}
+#aboutme:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 1;
+    border: 2px solid #ffffff;
+}
+
+                                            /*=======IMAGEN======*/
+
+#image {
+    float:left;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 0.5s;
+    margin: -29.5% 0% 5% 20%;
+    height: 86%;
+    width: 86%;
+}
+
+#image:hover {
+    border: 1px solid rgb(255, 255, 255);
+    width: 88%;
+    height: 88%;
+    transition: all 0.5s;
+}
+
+                                                /*======CV====== */
+
+#header2 {
+    font-size: 316%;
+    color: white;
+    text-decoration: overline;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.main{
+    margin-left: 2%;
+
+}
+
+#bloque{
+    margin-left: 2%;
+    width: 70%;
+}
+
+#imageprofile {
+    float:left;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 0.5s;
+    margin-top: -11% ;
+    
+}
+#imageprofile:hover {
+    border: 1px solid rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    transition: all 0.5s;
+}
+
+                                            /*PROFESSIONAL EXPERIENCE*/
+#PE {
+    font-size: 150%;
+    color: black;
+    text-align: center;
+    margin: 2% 0% 2% 0%;
+
+}
+
+#jobs {
+    font-size: 105%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 2% 0% 2% 0%;
+    text-decoration: overline;
+}
+
+#cargos {
+    font-size: 100%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 1% 0% 2% 0%;
+}
+
+#jobs2 {
+    font-size: 110%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 1% 0% 2% 0%;
+    text-decoration: overline;
+}
+
+#cargos2 {
+    font-size: 100%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 1% 0% 2% 0%;
+}
+
+                                        /* PERSONAL INFORMATION */
+#PI {
+    font-size: 150%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 2% 0% 2% 0%;
+}
+
+#info {
+    font-size: 110%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 2% 0% 2% 0%;
+    text-decoration: overline;
+}
+
+
+
+#data {
+    font-size: 100%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 2% 0% 1% 0%;
+}
+
+#data2 {
+    font-size: 100%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 2% 0% 1% 0%;
+}
+
+
+#info2 {
+    font-size: 110%;
+    color: black;
+    text-align: center;
+    padding: 0%;
+    margin: 5% 0% 1% 0%;
+    text-decoration: overline;
+}
+
+
+
+
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media (max-width: 599px) {
+    #image{
+        margin-top: 0;
+        margin-left: 5%;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+ }
+
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 29%;}
+    .col-s-4 {width: 30.33%;}
+    .col-s-5 {width: 40.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 29%;}
+    .col-4 {width: 30.33%;}
+    .col-5 {width: 40.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
